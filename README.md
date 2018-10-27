@@ -2,8 +2,8 @@
 
 ## Authors:
 
-### Andrea Murphy
+`Andrea Murphy`
 
-### Josh Quigley
+`Josh Quigley`
 
 
