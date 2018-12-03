@@ -23,19 +23,33 @@ The following is a description of our dataset:
 
 ## Original Data types
 age                int64
+
 workclass         object
+
 fnlwgt             int64
+
 education         object
+
 education-num      int64
+
 marital-status    object
+
 occupation        object
+
 relationship      object
+
 race              object
+
 sex               object
+
 capital-gain       int64
+
 capital-loss       int64
+
 hours-per-week     int64
+
 native-country    object
+
 salary             int64
 
 dtypes: int64(7), object(8)
