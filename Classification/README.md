@@ -129,12 +129,12 @@ RandomForestClassifier-
 The dataset originally had a salary field that consisted of:
 > <=50K and >50K
 
-To simplify training we replaced
+To simplify training and help to visualize the data we replaced
 > <=50K with 0 and >50K with 1
 
-This also helped with visualizing the data.
 We did not have any nulls to contend with in our dataset.
 For training we dropped unwanted fields and split the salary out so that we could score how accurate was the training of the model.
+
 **Trade Offs**-
 We focused on linear training a single feature. I’m sure if given more time we could improve accuracy by training with multiple features.
 
