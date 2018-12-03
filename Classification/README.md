@@ -62,9 +62,9 @@ Given an unlabeled observation X, the predict(X) returns the predicted label y.
 predictions = clf.predict(X_test)
 print(accuracy_score(y_test, predictions))
 **Evaluate the classifier model**-
-- A persons sex does have an impact on salary
+-  Gender has an impact whether a person will make a salary over 50K
 -       More men make over 50k than women
-- Education does have an impact on salary
+- Education has an impact whether a person will make a salary over 50K
 -       Less education a person has the less likely they will make <50K
 
 ## Models
@@ -74,43 +74,53 @@ Decision Tree - Trade off is it can overfit if the tree grows too deep.
 Support Vector Machine - Trade off is it’s slower than other classifiers.
 Logistic Regression - Trade off is it underperforms in nonlinear training scenarios.
 
-Fine Tune the Hyper-parameters:
-Education vs. Salary-
-Decision Tree-
-Random State - to train with the same random data each time.
-Max Depth - to limit the tree from overfitting the training data.
-Min Samples Leaf - guaranteeing more samples at each leaf.
-Support Vector Machine -
-    Random State - to train with the same random data each time.
-    Kernel - RBF had the best results.
-Logistic Regression -
-        Random State - to train with the same random data each time.
-        Solver - liblinear used for small linear datasets.
+### Fine Tune the Hyper-parameters:
+**Education vs. Salary**-
+Decision Tree
+- Random State
+    - to train with the same random data each time.
 
+Max Depth
+-  to limit the tree from overfitting the training data.
 
-Accuracy of Models
+Min Samples Leaf
+- guaranteeing more samples at each leaf
 
-Education vs. Salary-
-    Decision Tree - Training accuracy is ~79% and Testing accuracy is also ~79%
-    Support Vector Machine - Training accuracy is ~78% and Testing accuracy is also ~79%
-    Logistic Regression - Training accuracy is ~78% and Testing accuracy is also ~78%
+Support Vector Machine
+- Random State
+  - To train with the same random data each time
+  - Kernel - RBF had the best results
 
-Sex vs. Salary-
-    RandomForestClassifier-
-Accuracy = 0.797
+Logistic Regression
+- Random State
+    - To train with the same random data each time.
+- Solver
+    - liblinear used for small linear datasets.
 
-Feature engineering and feature selection
-The dataset originally had a salary field that consisted of <=50K and >50K. To simplify training we replaced <=50K with 0 and >50K with 1. This also helped with visualizing the data.
+### Accuracy of Models
+
+**Education vs. Salary**-
+    Decision Tree -
+    Training and Testing `accuracy = 79%`
+    Support Vector Machine -
+    Training `accuracy = 78%` and `Testing accuracy = 79%`
+    Logistic Regression-
+    Training and Testing `accuracy = 78%`
+
+**Sex vs. Salary**-
+RandomForestClassifier-
+`Accuracy = 0.797`
+
+## Feature engineering and feature selection
+The dataset originally had a salary field that consisted of:
+> <=50K and >50K
+
+To simplify training we replaced
+> <=50K with 0 and >50K with 1
+
+This also helped with visualizing the data.
 We did not have any nulls to contend with in our dataset.
 For training we dropped unwanted fields and split the salary out so that we could score how accurate was the training of the model.
-Trade Offs-
+**Trade Offs**-
 We focused on linear training a single feature. I’m sure if given more time we could improve accuracy by training with multiple features.
-
-
-
-
-
-
-
-
 
