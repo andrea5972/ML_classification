@@ -22,7 +22,7 @@ The following is a description of our dataset:
 - of instances (Rows): 32560
 
 ## Original Data types
->age                int64
+age                int64
 workclass         object
 fnlwgt             int64
 education         object
