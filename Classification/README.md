@@ -9,9 +9,11 @@
 
 **Subject**: COMP-840.M1
 
-**Purpose**: Create a classification model to draw conclusion from observed values from the Adult dataset from census data.
+**Purpose**: Create a classification model to draw conclusion from observed values from the Adult dataset from census data
 
 **Description**: Use classification techniques to predict what features has the most influence for having a salary over $50k/yr
+
+**Note**: To keep the integrity of the data intact we decided to create two separate .ipynb files for the same project.
 
 **Dataset Obtained From**:
 https://archive.ics.uci.edu/ml/datasets/Adult
@@ -179,6 +181,17 @@ RandomForestClassifier-`Accuracy = 0.797`
 - Identifying unique categories for each feature
 - Classifying the categorical features as numbers instead of their names
 - Linear SVC
+- Correlation Matrix
+
+## Accuracy of Models
+    Support Vector Machine for Education and Occupation-
+    `accuracy = 78.7%`
+
+    Support Vector Machine for Education and Age-
+    `accuracy = 78.9%`
+
+    Create a Support Vector Machine combining Education, age, hours.per.week, and capital.gain with income
+    `accuracy = 80.2%`
 
 ### Fine Tune the Hyper-parameters:
 Decision Tree
