@@ -6,8 +6,11 @@
 `Josh Quigley`
 
 **ML**: Classification
+
 **Subject**: COMP-840.M1
+
 **Purpose**: Create a classification model to draw conclusion from observed values from the Adult dataset from census data.
+
 **Description**: Use classification techniques to predict what features has the most influence for having a salary over $50k/yr
 
 **Dataset Obtained From**:
@@ -162,8 +165,10 @@ Learning Curve
 **Education vs. Salary**-
     Decision Tree -
     Training and Testing `accuracy = 79%`
+
     Support Vector Machine -
     Training `accuracy = 78%` and `Testing accuracy = 79%`
+
     Logistic Regression-
     Training and Testing `accuracy = 78%`
 
