@@ -156,7 +156,7 @@ RandomForestClassifier
 - An ensemble approach to finding the decision tree that best fits the training data by creating many decision trees and then determining the average one. The random term refers to building each of the decision trees from a random selection of features, and the forest refers to the set of decision trees.
 
 Linear SVC
-- A classification algorithm that seeks to maximize the margin between positive and negative classes by mapping input data vectors to a higher dimensional space.
+- A classification algorithm that seeks to maximize the margin between positive and negative classes by mapping input data vectors to a higher dimensional space, and only supports a linear kernel.
 
 Learning Curve
 - learning curve shows how error changes as the training set size increases
