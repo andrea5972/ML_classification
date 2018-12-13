@@ -1,14 +1,56 @@
-{% extends 'base.html' %}
 
-{% block body %}
+<!DOCTYPE html>
+<html lang="en">
 
-<h1>{{ the_title }}</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> Income Classification </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
 
-<!-- note how items from the "static" folder are linked -->
-<img src="{{ url_for('static', filename='images/o_meter.png')}}" />
-
-<p>Welcome to the Income-o-meter</p>
-
-{% endblock %}
-
-
+<body>
+  <div class="container">
+    <div class="jumbotron text-center">
+      <h1>Will you make over 50K or under 50K</h1>
+    </div>
+    <br>
+  <style>
+    input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+</style>
+    <form action="/results" method="POST">
+        <label for="sex">Gender</label>
+        <select id="sex" name="sex">
+          <option value="0" selected="selected">male</option>
+          <option value="1" selected="selected">female</option>
+        </select>
+      <br>
+        <label for="marital-status">Select Your Marital Status</label>
+        <select id="marital-status" name="marital-status">
+          <option value="0" selected="selected">Married-spouse-absent</option>
+          <option value="1" selected="selected">Widowed</option>
+          <option value="2" selected="selected">Married-civ-spouse</option>
+          <option value="3" selected="selected">Separated</option>
+          <option value="4" selected="selected">Divorced</option>
+          <option value="5" selected="selected">Never-married</option>
+          <option value="6" selected="selected">Married-AF-spouse</option>
+      </select>
+      <br>
+        <label for="education_num">Enter your education-num (1-16)</label>
+        <input type= "text" id="education-num" name="education-num" />
+      <br>
+        <label for="age">age</label>
+        <input type= "text" id="age" name="age" />
+      <br>
+    <input type="submit" value="get prediction" />
+    </form>
+  </div>
+  </body>
+</html>

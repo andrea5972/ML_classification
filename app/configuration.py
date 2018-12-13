@@ -1,3 +1,10 @@
+"""
+Author: Andrea Murphy
+Last Updated: Dec 12, 2018
+Relative File Path: app/configuration.py
+Description: configuration file for app
+"""
+
 class Config(object):
     """
     Configuration base, for all environments.
