@@ -1,5 +1,6 @@
 # ML: Regression
-Author: Andrea Murphy and Josh Quigley
+
+Author: `Andrea Murphy` and `Josh Quigley`
 
 Subject: COMP-840.M1
 
