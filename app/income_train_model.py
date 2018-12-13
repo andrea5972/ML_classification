@@ -1,5 +1,4 @@
 """
-Author: Andrea Murphy
 Last Updated: Dec 12, 2018
 Relative File Path: app/income_train_model.py
 Description: Classification of the census adult income dataset

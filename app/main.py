@@ -1,5 +1,4 @@
 """
-Author: Andrea Murphy
 Last Updated: Dec 12, 2018
 Relative File Path: /main.py
 Description: app routes
