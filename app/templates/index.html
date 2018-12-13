@@ -19,7 +19,7 @@
       <h1>Will you make over 50K or under 50K</h1>
     </div>
     <br>
-<form class="text-center">
+<div class="text-center">
     <form action="/results" method="POST">
         <label style= "color:darkblue " for="sex"><h2>Gender<h2></label>
         <select id="sex" name="sex">
@@ -44,12 +44,13 @@
         <input type= "text" id="education-num" name="education-num" />
       <br>
       <br>
-        <label style= "color:darkblue " for="age"><h2>age</label></h2>
+        <label style= "color:darkblue " for="age"><h2>Enter Age, must be over 18</label></h2>
         <input type= "text" id="age" name="age" />
       <br>
       <br>
-          <button type="submit" class="get prediction">Get Prediction</button>
+          <input type="submit" class="get prediction" value="Get Prediction" />
     </form>
   </div>
+</div>
   </body>
 </html>
